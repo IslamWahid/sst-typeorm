@@ -2,13 +2,29 @@
   "extends": "../tsconfig.json",
   "include": ["functions"],
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es2017",
+    "target": "ES2021",
+    "module": "ES2022",
+    "lib": ["ES2021"],
+    "declaration": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "@sst-typeorm/core/*": ["./core/*"]
-    }
+    "resolveJsonModule": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    // "outDir": "dist",
+    "strictPropertyInitialization": false,
+    // "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
   }
 }
