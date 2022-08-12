@@ -18,7 +18,8 @@
     "@types/node": "^18.7.1",
     "aws-cdk-lib": "2.32.0",
     "typescript": "^4.7.4",
-    "vitest": "^0.21.1"
+    "vitest": "^0.21.1",
+    "@anatine/esbuild-decorators": "^0.2.19"
   },
   "workspaces": [
     "services"

@@ -2,16 +2,14 @@
   "extends": "../tsconfig.json",
   "include": ["functions"],
   "compilerOptions": {
-    "lib": [
-       "es5",
-       "es6"
-    ],
-    "target": "es5",
     "module": "commonjs",
+    "lib": ["es5", "es6"],
+    "target": "es2017",
+    "strict": false,
     "moduleResolution": "node",
-   //  "outDir": "./build",
+    "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true
- }
+    "baseUrl": "."
+  }
 }

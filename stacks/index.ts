@@ -8,7 +8,7 @@ export default function main(app: App) {
     runtime: 'nodejs16.x',
     bundle: {
       esbuildConfig: {
-        plugins: 'services/esbuild.cjs',
+        plugins: 'esbuild.js',
         keepNames: true,
       },
       externalModules: ['pg-native'],
