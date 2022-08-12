@@ -12,6 +12,8 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.102",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "@anatine/esbuild-decorators": "^0.2.19",
+    "esbuild-plugin-tsc": "^0.3.1"
   }
 }

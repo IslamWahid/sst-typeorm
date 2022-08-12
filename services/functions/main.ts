@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import { AppDataSource } from './data-source';
-import { User } from './entity/User.js';
+import { User } from './entity/User';
 
 export async function handler() {
   console.log('handler');

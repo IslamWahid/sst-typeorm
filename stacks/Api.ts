@@ -5,7 +5,7 @@ export function Api({ stack }: StackContext) {
     routes: {
       'GET /': {
         function: {
-          handler: 'functions/main.handler',
+          handler: 'services/functions/main.handler',
         },
       },
     },

@@ -2,29 +2,16 @@
   "extends": "../tsconfig.json",
   "include": ["functions"],
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "ES2022",
-    "lib": ["ES2021"],
-    "declaration": true,
-    "esModuleInterop": true,
-    "strict": false,
+    "lib": [
+       "es5",
+       "es6"
+    ],
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    // "outDir": "dist",
-    "strictPropertyInitialization": false,
-    // "allowSyntheticDefaultImports": true,
-    "baseUrl": "."
-  }
+    "sourceMap": true
+ }
 }

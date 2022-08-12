@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { User } from './entity/User.js';
-import { CreateDB1660215207912 } from './migration/1660215207912-CreateDB.js';
+import { User } from './entity/User';
+import { CreateDB1660215207912 } from './migration/1660215207912-CreateDB';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
