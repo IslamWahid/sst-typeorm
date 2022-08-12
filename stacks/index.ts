@@ -7,13 +7,11 @@ export default function main(app: App) {
   app.setDefaultFunctionProps({
     runtime: 'nodejs16.x',
     bundle: {
-      // format: 'esm',
       esbuildConfig: {
-        plugins: 'services/esbuild.js',
+        plugins: 'services/esbuild.cjs',
         keepNames: true,
       },
       externalModules: ['pg-native'],
-      // nodeModules: ['pg-native'],
     },
     environment: {
       APP_ROOT_PATH: path,

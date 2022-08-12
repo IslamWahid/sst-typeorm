@@ -2,7 +2,6 @@
   "extends": "@tsconfig/node16/tsconfig.json",
   "include": ["stacks"],
   "compilerOptions": {
-    "module": "ESNext",
-    "esModuleInterop": true
+    "module": "ESNext"
   }
 }
